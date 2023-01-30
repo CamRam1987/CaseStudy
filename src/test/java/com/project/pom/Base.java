@@ -10,6 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 public class Base {
 	
+	protected CustomWait customWait = new CustomWait();
 	protected WebDriver driver;
 	
 	public Base(WebDriver driver){
