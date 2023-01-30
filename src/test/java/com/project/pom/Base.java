@@ -44,6 +44,7 @@ public class Base {
 	}
 	
 	public void click(By locator) {
+		
 		driver.findElement(locator).click();
 	}
 	
