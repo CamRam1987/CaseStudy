@@ -1,11 +1,10 @@
 package com.project.tests;
 
-import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.project.pom.HomePage;
 
@@ -13,7 +12,7 @@ public class HomeTest {
 	private WebDriver driver;
 	HomePage homepage;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		homepage = new HomePage(driver);
 		driver = homepage.chromeDriverConnection();
@@ -21,13 +20,14 @@ public class HomeTest {
 		
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
 	}
 
 	@Test
 	public void test() {
+		
 		homepage.selectTrend();
 		
 		

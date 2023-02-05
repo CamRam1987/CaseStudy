@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class HomePage extends Base {
 	
 	By trendingSectionLocator = By.xpath("//div[@data-anchor-id='9']");
-	By trendingSelectionLocator = By.xpath("//a[@href='/italia?sort=newest-to-oldest']");
+	By trendingSelectionLocator = By.xpath("//a[@href='/atletico_junior?sort=newest-to-oldest']");
 	By wishListLocator = By.xpath("//a[@data-auto-id='wishlist-button-desktop']");
 	
 	public HomePage(WebDriver driver) {

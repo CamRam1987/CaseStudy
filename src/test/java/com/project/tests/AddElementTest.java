@@ -7,6 +7,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import com.project.pom.BaseTest;
 import com.project.pom.HomePage;
@@ -18,14 +20,14 @@ import com.project.pom.TrendingPage;
 public class AddElementTest extends BaseTest{
 	private WebDriver driver;
 	TrendingPage trendingpage;
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		trendingpage = new TrendingPage(driver);
 		driver = trendingpage.chromeDriverConnection();
 		trendingpage.visit("https://www.adidas.co/");
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		//driver.quit();
 	}
