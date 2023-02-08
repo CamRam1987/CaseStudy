@@ -13,7 +13,7 @@ public class SelectedElementPage extends Base {
 	
 	public SelectedElementPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 	public void addToWishList() {

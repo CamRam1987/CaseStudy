@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class Base {
@@ -15,6 +16,7 @@ public class Base {
 	
 	public Base(WebDriver driver){
 		this.driver=driver;
+		PageFactory.initElements(driver, this);
 	};
 	
 	public WebDriver chromeDriverConnection () {

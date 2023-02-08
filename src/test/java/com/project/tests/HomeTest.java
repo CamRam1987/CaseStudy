@@ -6,9 +6,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.project.pom.BaseTest;
 import com.project.pom.HomePage;
 
-public class HomeTest {
+public class HomeTest extends BaseTest {
 	private WebDriver driver;
 	HomePage homepage;
 
@@ -22,7 +23,7 @@ public class HomeTest {
 
 	@AfterMethod
 	public void tearDown() throws Exception {
-		driver.quit();
+		//driver.quit();
 	}
 
 	@Test

@@ -2,13 +2,11 @@ package com.project.tests;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.project.pom.BaseTest;
 import com.project.pom.HomePage;
@@ -18,8 +16,10 @@ import com.project.pom.TrendingPage;
 
 
 public class AddElementTest extends BaseTest{
+	
 	private WebDriver driver;
 	TrendingPage trendingpage;
+
 	@BeforeMethod
 	public void setUp() throws Exception {
 		trendingpage = new TrendingPage(driver);
@@ -29,14 +29,15 @@ public class AddElementTest extends BaseTest{
 
 	@AfterMethod
 	public void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
 	public void test() {
 		HomePage homepage = loadHomePage();
 		TrendingPage selectedelementpage = homepage.selectTrend();
-		assertEquals(driver.getCurrentUrl(),"https://www.adidas.co/italia?sort=newest-to-oldest");
+		selectedelementpage.verifyUrl("https://www.adidas.co/italia?sort=newest-to-oldest");
+		//assertEquals(driver.getCurrentUrl(),"https://www.adidas.co/italia?sort=newest-to-oldest");
 		
 	}
 
