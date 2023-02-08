@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T19:28:14 COT" name="Default suite" finished-at="2023-02-07T19:28:25 COT" duration-ms="10733">
+  <suite started-at="2023-02-07T22:07:51 COT" name="Default suite" finished-at="2023-02-07T22:08:00 COT" duration-ms="9599">
     <groups>
     </groups>
-    <test started-at="2023-02-07T19:28:14 COT" name="Default test" finished-at="2023-02-07T19:28:25 COT" duration-ms="10733">
-      <class name="com.project.tests.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.tests.HomeTest@647e447]" started-at="2023-02-07T19:28:14 COT" name="setUp" finished-at="2023-02-07T19:28:22 COT" duration-ms="8454" status="PASS">
+    <test started-at="2023-02-07T22:07:51 COT" name="Default test" finished-at="2023-02-07T22:08:00 COT" duration-ms="9599">
+      <class name="com.project.tests.AddElementTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.project.tests.AddElementTest@41fbdac4]" started-at="2023-02-07T22:07:51 COT" name="setUp" finished-at="2023-02-07T22:07:57 COT" duration-ms="6080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.project.tests.HomeTest@647e447]" started-at="2023-02-07T19:28:22 COT" name="test" finished-at="2023-02-07T19:28:25 COT" duration-ms="2218" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.project.tests.AddElementTest@41fbdac4]" started-at="2023-02-07T22:07:57 COT" name="test" finished-at="2023-02-07T22:08:00 COT" duration-ms="3148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.tests.HomeTest@647e447]" started-at="2023-02-07T19:28:25 COT" name="tearDown" finished-at="2023-02-07T19:28:25 COT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.project.tests.AddElementTest@41fbdac4]" started-at="2023-02-07T22:08:00 COT" name="tearDown" finished-at="2023-02-07T22:08:00 COT" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.project.tests.HomeTest -->
+      </class> <!-- com.project.tests.AddElementTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

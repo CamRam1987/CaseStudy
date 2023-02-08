@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,9 +35,9 @@ public class AddElementTest extends BaseTest{
 
 	@Test
 	public void test() {
-		HomePage homepage = loadHomePage();
+		HomePage homepage = new HomePage(driver);
 		TrendingPage selectedelementpage = homepage.selectTrend();
-		selectedelementpage.verifyUrl("https://www.adidas.co/italia?sort=newest-to-oldest");
+		Assert.assertTrue(selectedelementpage.verifyUrl("https://www.adidas.co/sportswear"));
 		//assertEquals(driver.getCurrentUrl(),"https://www.adidas.co/italia?sort=newest-to-oldest");
 		
 	}
